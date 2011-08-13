@@ -1,0 +1,5 @@
+	v1	v2	v3	v4	v5
+Site1	1	4	6	3	4
+Site2	NA	3	6	4	2
+Site3	5	4	6	6	8
+Site4	3	0	10	NA	1
