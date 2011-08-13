@@ -94,7 +94,7 @@ Timin <- apply(x, 2, comp.Timin)
 
 if (ord == "podani") pod <- 1 else pod <- 2
 
-res <- .C("gowdis", as.double(x), as.double(w), as.integer(type), as.integer(n), as.integer(p), as.double(range2), as.integer(pod), as.double(Timax), as.double(Timin), res = double(n*(n-1)/2), NAOK = T, PACKAGE = "FD")$res
+res <- .C("gowdis", as.double(x), as.double(w), as.integer(type), as.integer(n), as.integer(p), as.double(range2), as.integer(pod), as.double(Timax), as.double(Timin), res = double(n*(n-1)/2), NAOK = T, PACKAGE = "S16")$res
 
 type[type == 1] <- "C"
 type[type == 2] <- "O"
